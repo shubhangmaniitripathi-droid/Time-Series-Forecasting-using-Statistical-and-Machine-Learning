@@ -65,11 +65,13 @@ Each model is evaluated under both a **univariate** setup (load history only) an
 ├── data/
 │   └── Hourly_Data_220kV.xlsx
 ├── notebooks/
-│   ├── 01_SVR_Model.ipynb
-│   ├── 02_XGBoost_Model.ipynb
-│   ├── 03_Stacked_LSTM_Model.ipynb
-│   ├── 04_Seq2Seq_LSTM_NoAttention.ipynb
-│   └── 05_Seq2Seq_LSTM_Attention.ipynb
+│   ├── 01_EDA_and_Data_Cleaning.ipynb
+│   ├── 02_SARIMA_Baseline.ipynb
+│   ├── 03_SVR_Model.ipynb
+│   ├── 04_XGBoost_Model.ipynb
+│   ├── 05_Stacked_LSTM_Model.ipynb
+│   ├── 06_Seq2Seq_LSTM_NoAttention.ipynb
+│   └── 07_Seq2Seq_LSTM_Attention.ipynb
 ├── reports/
 │   ├── project_report.pdf              # Full write-up (methodology, results, references)
 │   ├── codebase_analysis_report.pdf    # Detailed model/architecture audit
@@ -79,10 +81,6 @@ Each model is evaluated under both a **univariate** setup (load history only) an
 ├── requirements.txt
 └── README.md
 ```
-
-> **Note:** the reports reference a SARIMA notebook and an EDA notebook (`sarima.ipynb`, `eda.ipynb`) that weren't included in this upload batch. Add them as `00_EDA_and_Data_Cleaning.ipynb` and `01_SARIMA_Baseline.ipynb` if you have them — I've left the numbering with a gap so they slot in cleanly (see the [renumbering commands](#getting-started) below).
-
----
 
 ## Models & Results
 
@@ -165,7 +163,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-Notebooks are numbered in suggested read order — start with `01_SVR_Model.ipynb` for the classical baseline and work up to `05_Seq2Seq_LSTM_Attention.ipynb` for the best-performing model.
+Notebooks are numbered in suggested read order — start with `01_EDA_and_Data_Cleaning.ipynb`... work up to `07_Seq2Seq_LSTM_Attention.ipynb`
 
 ---
 
